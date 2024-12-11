@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <header>
+        <div class="logo">Empresas Emergentes</div>
+        <nav>
+            <ul>
+                <li><a href="economia.html">Economía</a></li>
+                <li><a href="mercados.html">Mercados</a></li>
+                <li><a href="bolsa.html">Bolsa</a></li>
+                <li><a href="cripto.html">Criptomonedas</a></li>
+                <li><a href="contactos.html">Contactos</a></li>
+                <li><a href="tecnologo.html">Tecnologias</a></li>
+                <li><a href="NTF.html">NFT</a></li>
+                <li><a href="NTF.html">IA✯</a></li>
+            </ul>
+        </nav>
+    </header>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #678dc5;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .main-news {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .news-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+        .news-content {
+            margin-top: 20px;
+        }
+        .company-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px 0;
+            width: 100%;
+        }
+        .tradingview-widget-container {
+            width: 100%;
+            max-width: 600px;
+            height: 400px;
+        }
+        .company-description {
+            margin-top: 20px;
+            text-align: center;
+            max-width: 600px;
+        }
+        @media (min-width: 768px) {
+            .company-info {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: flex-start;
+            }
+            .company-description {
+                text-align: left;
+                margin-left: 20px;
+            }
+        }
+        footer {
+            background-color: #2e3b4e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+    <script src="https://s3.tradingview.com/tv.js"></script>
+</head>
+<body>
+
+<header>
+    <h1></h1>
+</header>
+
+<center>
+    <nav>
+    <li><a href="INDEX.HTML">Regreso al menú</a></li>
+</nav>
+</center>
+    <section class="main-news">
+    <div class="company-info">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_graph11"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "400",
+                    "symbol": "NASDAQ:ABNB",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_graph11"
+                });
+            </script>
+        </div>
+        <div class="company-description">
+            <img src="https://investigate.afsc.org/sites/default/files/company-logo/Airbnb_Logo_0.svg" alt="Airbnb" width="200">
+            <p><strong>Airbnb, Inc.</strong><br>Ubicación: San Francisco, California, EE.UU.<br>Descripción: Plataforma global de alquiler de alojamientos a corto plazo que conecta a viajeros con anfitriones en todo el mundo.</p>
+        </div>
+    </div>
+</section>
+
+<section class="main-news">
+    <div class="company-info">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_graph12"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "400",
+                    "symbol": "NYSE:PLTR",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_graph12"
+                });
+            </script>
+        </div>
+        <div class="company-description">
+            <img src="https://s.yimg.com/ny/api/res/1.2/OFrE64FhRGlSTsNh8dBW1g--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MDtoPTIzMDtjZj13ZWJw/https://media.zenfs.com/en/business-wire.com/5eb499d59bd5c0b52df0921b65eba186" alt="Palantir Technologies" width="200">
+            <p><strong>Palantir Technologies Inc.</strong><br>Ubicación: Denver, Colorado, EE.UU.<br>Descripción: Empresa líder en análisis de datos que trabaja con agencias gubernamentales y corporaciones para el análisis de grandes volúmenes de información.</p>
+        </div>
+    </div>
+</section>
+
+<section class="main-news">
+    <div class="company-info">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_graph13"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "400",
+                    "symbol": "NYSE:SNOW",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_graph13"
+                });
+            </script>
+        </div>
+        <div class="company-description">
+            <img src="https://images.ctfassets.net/k49d63tr8kcn/7KjVjYW8o6UIWGRgy5UihC/61d97dd0fbf1f17f975c6ac87bf6a758/snowflake-snowstorm_2x_1_.png" alt="Snowflake" width="200">
+            <p><strong>Snowflake Inc.</strong><br>Ubicación: Bozeman, Montana, EE.UU.<br>Descripción: Plataforma de almacenamiento y análisis de datos en la nube, enfocada en grandes volúmenes de datos empresariales.</p>
+        </div>
+    </div>
+</section>
+
+<section class="main-news">
+    <div class="company-info">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_graph14"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "400",
+                    "symbol": "DD2",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_graph14"
+                });
+            </script>
+        </div>
+        <div class="company-description">
+            <img src="https://1000marcas.net/wp-content/uploads/2021/07/DoorDash-logo-500x281.png" alt="DoorDash" width="200">
+            <p><strong>DoorDash Inc.</strong><br>Ubicación: San Francisco, California, EE.UU.<br>Descripción: Plataforma de entrega de alimentos y comestibles que conecta restaurantes y minoristas con consumidores en América del Norte.</p>
+        </div>
+    </div>
+</section>
+
+<section class="main-news">
+    <div class="company-info">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_graph15"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "400",
+                    "symbol": "NASDAQ:RIVN",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_graph15"
+                });
+            </script>
+        </div>
+        <div class="company-description">
+            <img src="https://www.collisionrepairmag.com/wp-content/smush-webp/2023/10/Release_Logo-2.jpg.webp" alt="Rivian" width="200">
+            <p><strong>Rivian Automotive, Inc.</strong><br>Ubicación: Plymouth, Michigan, EE.UU.<br>Descripción: Fabricante de vehículos eléctricos, especializado en SUV y camionetas, con un enfoque en sostenibilidad y tecnología avanzada.</p>
+        </div>
+    </div>
+</section>
+
+<section class="main-news">
+    <div class="company-info">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_graph16"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "400",
+                    "symbol": "NASDAQ:COIN",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_graph16"
+                });
+            </script>
+        </div>
+        <div class="company-description">
+            <img src="https://www.wallstreetreporter.com/wp-content/uploads/2021/10/coinbase-new-2021-logo-FA5145228F-seeklogo.com_.png" alt="Coinbase" width="200">
+            <p><strong>Coinbase Global, Inc.</strong><br>Ubicación: San Francisco, California, EE.UU.<br>Descripción: Plataforma de intercambio de criptomonedas que permite a los usuarios comprar, vender y almacenar diversas criptomonedas.</p>
+        </div>
+    </div>
+</section>
+
+<section class="main-news">
+    <div class="company-info">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_graph20"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "400",
+                    "symbol": "NYSE:U",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_graph20"
+                });
+            </script>
+        </div>
+        <div class="company-description">
+            <img src="https://s26.q4cdn.com/977690160/files/design/U_Logo_White_RGB_1C.png" alt="Unity" width="200">
+            <p><strong>Unity Software Inc.</strong><br>Ubicación: San Francisco, California, EE.UU.<br>Descripción: Plataforma de desarrollo de videojuegos y contenido interactivo, conocida por su motor gráfico utilizado en la creación de juegos y experiencias en 3D.</p>
+        </div>
+    </div>
+</section>
+
+<section class="main-news">
+    <div class="company-info">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_graph19"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "400",
+                    "symbol": "NYSE:SPOT",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_graph19"
+                });
+            </script>
+        </div>
+        <div class="company-description">
+            <img src="https://www.stocksbnb.com/wp-content/uploads/2022/10/spotify-logo-1920x1080-2.jpg" alt="Spotify" width="200">
+            <p><strong>Spotify Technology S.A.</strong><br>Ubicación: Estocolmo, Suecia.<br>Descripción: Servicio de streaming de música que ofrece acceso a millones de canciones, podcasts y contenido de audio.</p>
+        </div>
+    </div>
+</section>
+
+<section class="main-news">
+    <div class="company-info">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_graph17"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "400",
+                    "symbol": "NYSE:NIO",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_graph17"
+                });
+            </script>
+        </div>
+        <div class="company-description">
+            <img src="https://planview-media.s3.us-west-2.amazonaws.com/wp-content/uploads/2022/08/NIO_logo.png" alt="NIO" width="200">
+            <p><strong>NIO Inc.</strong><br>Ubicación: Shanghái, China.<br>Descripción: Fabricante de vehículos eléctricos de lujo, conocido por su tecnología de baterías intercambiables.</p>
+        </div>
+    </div>
+</section>
+
+<section class="main-news">
+    <div class="company-info">
+        <div class="tradingview-widget-container">
+            <div id="tradingview_graph18"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "400",
+                    "symbol": "NYSE:SHOP",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_graph18"
+                });
+            </script>
+        </div>
+        <div class="company-description">
+            <img src="https://s27.q4cdn.com/572064924/files/design/logo/shopify_logo_whitebg.svg" alt="Shopify" width="200">
+            <p><strong>Shopify Inc.</strong><br>Ubicación: Ottawa, Canadá.<br>Descripción: Plataforma de comercio electrónico que permite a las empresas crear y gestionar sus tiendas en línea.</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2024 Empresas emergentes</p>
+</footer>
+
+</body>
+</html>
+

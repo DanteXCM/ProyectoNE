@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economía Mundial</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #678dc5;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .news-list {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            margin: 20px;
+        }
+        .news-item {
+            display: flex;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        .news-item img {
+            width: 200px;
+            height: 150px;
+            border-radius: 8px;
+            margin-right: 20px;
+        }
+        .news-item .description {
+            flex-grow: 1;
+        }
+        .news-item h3 {
+            margin: 0;
+            color: #007BFF;
+        }
+        .news-item p {
+            margin: 5px 0 0;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Economía Mundial</h1>
+</header>
+
+<nav>
+    <li><a href="INDEX.HTML">Regreso al menú</a></li>
+</nav>
+
+<!-- Lista de noticias con imagen y breve descripción -->
+<section class="news-list">
+    <article class="news-item">
+        <img src=https://elfinanciero.com.mx/resizer/v2/FVW2D2VDABDQJC6266DFY7R6CE.jpeg?auth=ad0cfd96c59a6991459a4ca41add33d38e4bd72af9ba4f0646312fd311cc67ec&smart=true&width=200&height=150 alt="Noticia 1">
+        <div class="description">
+            <h3><a href="mundo1.html">Crece el ‘business’: Comercio bilateral México-EU marca máximos históricos en agosto</a></h3>
+            <p>El intercambio de mercancías entre ambas naciones sumó 559.8 mil millones de dólares entre enero y agosto de 2024.</p>
+        </div>
+    </article>
+    
+    <article class="news-item">
+        <img src=https://elfinanciero.com.mx/resizer/v2/RAFSOBPFYJHMFFZ47K23GKYBFE.jpg?auth=bf2821bb22600eca1547440e8b992d7820b715ee0b5747dbdc3827ada2907850&smart=true&width=200&height=150 alt="Noticia 2">
+        <div class="description">
+            <h3><a href="mundo2.html">¿Habrá ‘gasolinazo’? Si Israel ataca a Irán el precio del petróleo podría dispararse 15 dólares más, alertan</a></h3>
+            <p>Los precios del petróleo podrían subir entre 10 y 15 dólares más por barril si Israel ataca las instalaciones de exportación iraníes.</p>
+        </div>
+    </article>
+    
+    <article class="news-item">
+        <img src=https://imagenes.eleconomista.com.mx/files/image_756_472/uploads/2022/10/14/66e48acf56c5d.jpeg alt="Noticia 3">
+        <div class="description">
+            <h3><a href="mundo3.html">Bx+ recorta expectativa de PIB para este año a 1.3% desde 1.9% previo</a></h3>
+            <p>Economistas de BX+ recortaron sus expectativas de crecimiento para el Producto Interno Bruto (PIB) de México en 2024 y 2025.</p>
+        </div>
+    </article>
+
+    <article class="news-item">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAFwAXAMBIgACEQEDEQH/xAAbAAACAwEBAQAAAAAAAAAAAAADBAECBQYAB//EADcQAAIBAwIEBQEGBAcBAAAAAAECAwAEERIhBRMxQSIyUWFxoUKBkbHB4RQjJdEVQ1JicvDxBv/EABgBAQEBAQEAAAAAAAAAAAAAAAEAAgME/8QAGhEBAQEBAQEBAAAAAAAAAAAAAAERAhIhMf/aAAwDAQACEQMRAD8AFb8mViOxq15ZF4jyG0v2IPSk11QzjYUO5vXWMsM7GvZXkhuONwqh92xvRHhfYruKmJjcWccqHDld6Gs01uQZYzo9adKUyGAIPWj36LFdDw9UzVRNHMRkd9qLxEqZVYD7PWoKRKj9Rj4ptCFXGelZgm0/tROexXanTh/IIIFBOQd1NKR3EgenoplkALHFWrAbqZ4bC4liOlljLDPriuVPHb5jk3G//Ef2rqeNlBwq60nflGvn+lu4+v71jqnl1MtyrmPAOc0vekC2f1yKFbyLziynYqSKmeRWQA4xqH50dVYYtb5rW1t2IJByK1kvUk2dRpPXasC5aKOzk0YJRWIGfQfFM8Fuw1oplI64z6iqVNpEiwAie4pfizMw5sefDsayzeulxKNyqk6QT1xV24wksSFgdJIB7Hrin0sVE79wfwov8Q6KCykA96Xv+LpanlLCsiAg5z617/GVYojwqkecNvkY/Cr1DlNRXIznNMidMjfFJxLFcESQsoDdNutEa1lUkYDAdwa0F+LT/wBLucnqhFcWW9P+/Sum4k39Nn8Q8uPrXLDb/wA/esdGNGOVzenljEbBR18o64pu4cCHOT5h+dZqsySYZD4ypHQ9Ac9KNK+qIjJGfasaVbu7bkSg6VyrAZHtU8MukSzCO7eYkbUrcyKkMgVifCR4h7UKy0mAaiw9wR60ajxvMysFbUGT8M0O3uDJCsSKzPqBwoJPmpS2i1zScvfCatyBncD9ad4CskV05MbgaNsqf9QqtMgHEJJFLFica+/zVjciRWGT6fSkZrS/Yazb3BjzseW2OtWto3E3KkBU+jD5oadHw2/ihtw7xhljx382TTS8W1IJ4xoQlhpHt2rCSCTQYwynJG2cDP31Zoplt1RsAIxJ3G9a9M4av78z2cqMQNgBt71z0sxVsA527GtGS3llTQq7NtqKnHXpjFWj4eI1wIye5zGT+lF6MhBZsIFzgg9c5NEkuU1gkOFHXxU1IIi4RzFE7LpIjGd+5wOlWiso4o8xoJPWWQeX4FYRcypOjKEm8p0757Y9KmIxwQKJTIh7ajjP1qk8rpKRHJKzdwvlx8elejguJm1vHp9GYYx91VqwPS8kx5H8w7Be+Pmuh4Za8R4XKlxxGCeCM7ApHhj952HToetIWFncPKhe4IVWBIVsDGc+lfQv/rpObYXfiJAvVC5PQcsVS6r8YL8anWT+TO7xkEESqAR6dO9cjMxgvObCwZ0J8Tb4xnt0p26vY4hhDzHPZe1JuJpY/CPA3jY7jTk/Wm1REl2k0pbko+Rg/ZyfgUxFb8tmnm0gE+EBRUW9vHAmt0A8Q0q2TgjPX29qDdXbvMkS4CFlzjoaNxH18GphNpAONhnFBa6EbFZ7wBuuyNuKl11RSqN/GT096Ru0DzZZfsjt7fFDp8bJC2sMtvLZRPLPCRqI8uejKe+KpeySXAjWQR6Y0CjSM6gD1+v0rR41LrsITjLBk3yAVGR+NYL+KGNvODr+zj7Q36fSuXPV7m1n5HpLk6ykWiNioYMVzj4A+6rRJcya1nuYVjbcacEn4Hb5oQuGhGkFPEPtDJ6UpLNzSeY8hUHG5wK3+fqOreR2o5VoGYqckk53/WhScUuGR1lkblO2rlhs5b1pH+IUqyRFt9zTkFvrKc9I0DpnW5K4ztkb71SLQIg11KF0nAOBg9PatCd44ZmICs+NBxkKBuP7VD3KWELJbx6WByrlAGwQO/f96zZrozMHc6nY9SBnrWrfIXnunkwJfMf92R70GFybmEE/5g6fNVdQhOcHGd8UWxt+ZcRSL0Djbv1rMm0xqOwWCQrt4jvnvk0tcj+c2BtgY/AU3LgRMB0LdD99Z90XFw4AGNvyHvWm2pdyvJAGDqI1w3m3yN6znldgWA5SjoxPi3NBgk13CrpAQvsgyQPjNaHE05BaJWLIQGwwGxx6496OZjmzhMsedOSSfN3oNwZGIDg9MkDYj5pu0QGOSYjLJ0HbpT95AtsLtkZmeG5wjsAThRsOlM51E7Xh8XIMzsw07nSpwANyMkbtgqfTf76iZRqKZbXqxnAOx9aNxhjZM0cbM3MVWZnYkkkZP6fhUoiwW2pVDZYbOMjc1vMRMxzSMoLEhM4Ge36bmghYWDnHkORk05eOGi2RFJxkqMUlNEsThVJIK53rn1FBeFpFLeqJpghxldS6lOx2q3CZg1yVYgZIYbbH22pWE6dTDrtvWnwpQAzDYsxB9wKpTB0b+V4j1J6k1n3TkXD7+n5fNNlmMHXqfSkLkn+Ik+fX2pbf/9k=" alt="Noticia 4">
+        <div class="description">
+            <h3><a href="mundo4.html">China anuncia paquete de inversión en su economía que decepciona a los mercados</a></h3>
+            <p>Beijing, una vez más, redobla sus esfuerzos para intentar activar una economía interna que no ha logrado activarse por completo</p>
+        </div>
+    </article>
+
+    <article class="news-item">
+        <img src="https://imagenes.eleconomista.com.mx/files/image_262_130/uploads/2024/10/08/6705c3f3c9982.jpeg" alt="Noticia 5">
+        <div class="description">
+            <h3><a href="mundo5.html">China advierte a EU de sus "serias preocupaciones" restricciones comerciales</a></h3>
+            <p>Las últimas medidas, que abarcan 18,000 millones de dólares en productos chinos, se producen semanas antes de las elecciones presidenciales en Estados Unidos.</p>
+        </div>
+    </article>
+</section>
+
+<footer>
+    <p>© 2024 Economía Mundial</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolsa de Valores</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background: #007BFF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: #007BFF;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #007BFF;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.9em;
+            color: #777;
+        }
+        img {
+            display: block;
+            margin: 20px auto;
+            border-radius: 8px;
+        }
+        
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Bolsa de Valores</h1>
+</header>
+
+<nav>
+    <li><a href="INDEX.HTML">Regreso al menú</a></li>
+</nav>
+
+<section>
+    <h2>Introducción</h2>
+    <p>La bolsa de valores es un mercado donde se compran y venden acciones de empresas públicas. Es un indicador clave de la salud económica y permite a las empresas obtener capital para su crecimiento.</p>
+</section>
+
+<section>
+    <h2>Componentes Clave</h2>
+    <ul>
+        <li><strong>Acciones:</strong> Representan la propiedad parcial de una empresa y su valor puede aumentar o disminuir según el rendimiento de la empresa y las condiciones del mercado.</li>
+        <li><strong>Índices Bursátiles:</strong> Miden el rendimiento de un grupo de acciones, como el S&P 500 o el IPC en México.</li>
+        <li><strong>Operaciones:</strong> Las transacciones en la bolsa pueden ser realizadas por inversores individuales o instituciones, y se basan en análisis de mercado y tendencias.</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Desafíos Actuales</h2>
+    <p>La bolsa de valores enfrenta retos como la volatilidad, los cambios regulatorios y las crisis económicas. Estos factores pueden afectar la confianza de los inversores y la estabilidad del mercado.</p>
+</section>
+
+<section>
+<script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+
+<h1>Graficas de Fondos Cotizados en Bolsa</h1>
+
+    <button onclick="loadChart('Nvidia')">Ver graficas</button>
+    <div id="chartContainer" style="center: 500px; width: 100%;"></div>
+
+ <script>
+        function loadChart(symbol) {
+            new TradingView.widget({
+                "container_id": "chartContainer",
+                "width": "100%",
+                "height": "500",
+                "symbol": symbol,
+                "interval": "D",
+                "timezone": "Etc/UTC",
+                "theme": "light",
+                "style": "1",
+                "locale": "es",
+                "toolbar_bg": "#f1f3f6",
+                "enable_publishing": false,
+                "allow_symbol_change": true,
+                "details": true,
+                "hotlist": true,
+                "calendar": true,
+                "studies": [
+                    "MACD@tv-basicstudies",
+                    "StochasticRSI@tv-basicstudies"
+                ],
+                "container_id": "chartContainer"
+            });
+        }
+    </script>
+</section>
+
+<footer>
+    <p>© 2024 Bolsa de Valores</p>
+</footer>
+
+
+</body>
+</html>

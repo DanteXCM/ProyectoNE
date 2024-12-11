@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Tecnologías Emergentes</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+        color: #333;
+    }
+    header {
+        background: #678dc5;
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    header {
+            background-color: #678dc5;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+    nav {
+        margin: 20px 0;
+        text-align: center;
+    }
+    nav a {
+        text-decoration: none;
+        color: #007BFF;
+        font-weight: bold;
+    }
+    nav a:hover {
+        text-decoration: underline;
+    }
+    .news-list {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        margin: 20px;
+    }
+    .news-item {
+        display: flex;
+        background: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .news-item img {
+        width: 200px;
+        height: 150px;
+        border-radius: 8px;
+        margin-right: 20px;
+    }
+    .news-item .description {
+        flex-grow: 1;
+    }
+    .news-item h3 {
+        margin: 0;
+        color: #007BFF;
+    }
+    .news-item p {
+        margin: 5px 0 0;
+    }
+    footer {
+        text-align: center;
+        margin: 20px 0;
+        font-size: 0.9em;
+        color: #777;
+    }
+</style>
+</head>
+<body>
+
+<header>
+<h1>Tecnologias </h1>
+</header>
+
+<nav>
+<li><a href="INDEX.HTML">Regreso al menú</a></li>
+</nav>
+</style>
+<body>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+        <ol class="carousel-indicators">
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="8"></li>
+            <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="9"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://talkao.com/wp-content/uploads/2024/05/Inteligencia-Artificial-en-la-Ensenanza-de-Idiomas-Perspectivas-y-Retos-Futuros.webp" class="d-block w-100" alt="IA Generativa">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Inteligencia Artificial Generativa</h5>
+                    <p>Crea contenido original como texto, imágenes y música, revolucionando la creatividad.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.infoteknico.com/wp-content/uploads/2024/03/Computacion-Cuantica.jpg" class="d-block w-100" alt="Computación Cuántica">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Computación Cuántica</h5>
+                    <p>Resuelve problemas complejos a gran velocidad mediante qubits.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://lahuertadigital.es/wp-content/uploads/2016/09/Tecnolog%C3%ADa-CRispr.jpg" class="d-block w-100" alt="Biotecnología CRISPR">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Biotecnología CRISPR</h5>
+                    <p>Tecnología de edición genética que permite modificar secuencias de ADN con precisión.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWTJn63n-zjMgwaQJ6F4pl3I8rvMqyZ2-Gig&s" class="d-block w-100" alt="Redes 5G">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Redes 5G</h5>
+                    <p>Ofrecen alta velocidad de datos y conectividad masiva para dispositivos.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://edu-labs.co/wp-content/uploads/2024/06/medium-shot-man-wearing-vr-glasses-scaled.jpg" class="d-block w-100" alt="Realidad Aumentada y Virtual">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Realidad Aumentada y Virtual</h5>
+                    <p>Transforman la forma en que interactuamos con el contenido digital y el entorno.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://i.ytimg.com/vi/Yn8WGaO__ak/maxresdefault.jpg" class="d-block w-100" alt="Blockchain">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Blockchain</h5>
+                    <p>Proporciona un libro de contabilidad seguro y transparente para las transacciones.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.starkcloud.com/hubfs/Ciberseguridad%20en%20el%20Internet%20de%20las%20cosas%20%28IoT%29.webp" class="d-block w-100" alt="Internet de las Cosas">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Internet de las Cosas (IoT)</h5>
+                    <p>Conecta dispositivos para recopilar y compartir datos, mejorando la eficiencia.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.udax.edu.mx/blog/la-revolucion-de-los-drones-y-software-de-vanguardia-explorando-el-futuro-del-aire_1.jpg" class="d-block w-100" alt="Drones">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Drones</h5>
+                    <p>Vehículos aéreos no tripulados para diversas aplicaciones, desde entregas hasta vigilancia.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdetech.org/wp-content/uploads/2024/04/DALL%C2%B7E-2024-04-17-11.37.45-Visualize-a-harmonious-blend-of-renewable-energy-sources-within-both-natural-and-urban-settings.-This-composition-includes-solar-panels-atop-urban-bui.webp" class="d-block w-100" alt="Energías Renovables">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Energías Renovables Avanzadas</h5>
+                    <p>Tecnologías que reducen la dependencia de combustibles fósiles y promueven la sostenibilidad.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://www.unesco.org/sites/default/files/styles/small_fixed/article/2023-12/Neurotecnologia%20AdobeStock_624262966%20-%20web.jpg?itok=FVId2kbg&width=289&height=192" class="d-block w-100" alt="Neurotecnología">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Neurotecnología</h5>
+                    <p>Interfiere con el sistema nervioso para mejorar funciones cognitivas y motoras.</p>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </a>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    Inteligencia Artificial Generativa
+                </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                <h2>Características y Análisis</h2>
+                <ul>
+                    <li><strong>Fecha de creación:</strong> Desde 2010, con avances significativos.</li>
+                    <li><strong>Ventajas:</strong> Automatiza tareas, ahorra tiempo y fomenta la creatividad.</li>
+                    <li><strong>Desventajas:</strong> Riesgo de desinformación y sesgos en los modelos.</li>
+                </ul>
+                <div class="accordion-body">
+                    Transformando la forma en que se crean contenidos, la IA generativa plantea debates sobre derechos de autor y el futuro del trabajo.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    Computación Cuántica
+                </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                <h2>Características y Análisis</h2>
+                <ul>
+                    <li><strong>Fecha de creación:</strong> Concepto desde los años 80, desarrollo activo en 2000s.</li>
+                    <li><strong>Ventajas:</strong> Procesamiento de datos extremadamente rápido, ideal para problemas complejos.</li>
+                    <li><strong>Desventajas:</strong> Costos elevados y requisitos de tecnología avanzada.</li>
+                </ul>
+                <div class="accordion-body">
+                    Puede transformar sectores como la criptografía y la farmacéutica, pero la tecnología aún está en sus etapas iniciales.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    Biotecnología CRISPR
+                </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                <h2>Características y Análisis</h2>
+                <ul>
+                    <li><strong>Fecha de creación:</strong> Desarrollada en 2012.</li>
+                    <li><strong>Ventajas:</strong> Precisión en la edición genética, potencial para curar enfermedades.</li>
+                    <li><strong>Desventajas:</strong> Dilemas éticos sobre modificación genética y bioseguridad.</li>
+                </ul>
+                <div class="accordion-body">
+                    Permite avances significativos en medicina, pero también plantea preguntas difíciles sobre la ética en la modificación de organismos.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                    Redes 5G
+                </button>
+            </h2>
+            <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                <h2>Características y Análisis</h2>
+                <ul>
+                    <li><strong>Fecha de creación:</strong> Introducción en 2019.</li>
+                    <li><strong>Ventajas:</strong> Conexiones más rápidas y estables, baja latencia.</li>
+                    <li><strong>Desventajas:</strong> Costos de implementación elevados, cobertura limitada en algunas áreas.</li>
+                </ul>
+                <div class="accordion-body">
+                    Potencia el Internet de las Cosas y la realidad aumentada, pero enfrenta desafíos en la infraestructura global.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                    Realidad Aumentada y Virtual
+                </button>
+            </h2>
+            <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                <h2>Características y Análisis</h2>
+                <ul>
+                    <li><strong>Fecha de creación:</strong> Conceptos desde 1960, aplicaciones populares desde 2010.</li>
+                    <li><strong>Ventajas:</strong> Mejora la experiencia del usuario, aplicaciones en educación y entretenimiento.</li>
+                    <li><strong>Desventajas:</strong> Pueden causar fatiga visual, limitaciones en el hardware.</li>
+                </ul>
+                <div class="accordion-body">
+                    Estas tecnologías están revolucionando campos como la educación y el entretenimiento, pero también generan preocupaciones sobre la adicción y la distracción.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                    Blockchain
+                </button>
+            </h2>
+            <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                <h2>Características y Análisis</h2>
+                <ul>
+                    <li><strong>Fecha de creación:</strong> Introducción en 2008 con Bitcoin.</li>
+                    <li><strong>Ventajas:</strong> Seguridad en transacciones, transparencia.</li>
+                    <li><strong>Desventajas:</strong> Escalabilidad y consumo energético elevado.</li>
+                </ul>
+                <div class="accordion-body">
+                    Está cambiando la forma en que se realizan transacciones, pero la tecnología aún necesita soluciones para su adopción masiva.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingSeven">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                    Internet de las Cosas (IoT)
+                </button>
+            </h2>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                <h2>Características y Análisis</h2>
+                <ul>
+                    <li><strong>Fecha de creación:</strong> Concepto desde 1999, en auge desde 2010.</li>
+                    <li><strong>Ventajas:</strong> Automatización y control de dispositivos, mayor eficiencia.</li>
+                    <li><strong>Desventajas:</strong> Riesgos de seguridad y privacidad, necesidad de estándares comunes.</li>
+                </ul>
+                <div class="accordion-body">
+                    Facilita la vida diaria, pero plantea desafíos en términos de seguridad y privacidad.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingEight">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                    Drones
+                </button>
+            </h2>
+            <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                <h2>Características y Análisis</h2>
+                <ul>
+                    <li><strong>Fecha de creación:</strong> Usos desde los años 2000.</li>
+                    <li><strong>Ventajas:</strong> Versatilidad en aplicaciones, como entrega y monitoreo.</li>
+                    <li><strong>Desventajas:</strong> Regulaciones estrictas y preocupaciones de privacidad.</li>
+                </ul>
+                <div class="accordion-body">
+                    Tienen el potencial de revolucionar la logística, pero enfrentan desafíos legales y éticos.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingNine">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                    Energías Renovables Avanzadas
+                </button>
+            </h2>
+            <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                <h2>Características y Análisis</h2>
+                <ul>
+                    <li><strong>Fecha de creación:</strong> Desarrollo en curso, impulsado desde 2000.</li>
+                    <li><strong>Ventajas:</strong> Sostenibilidad y reducción de huella de carbono.</li>
+                    <li><strong>Desventajas:</strong> Costos iniciales altos y dependencia de políticas gubernamentales.</li>
+                </ul>
+                <div class="accordion-body">
+                    La transición a energías limpias es crucial, pero aún hay desafíos económicos y técnicos que superar.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="flush-headingTen">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                    Neurotecnología
+                </button>
+            </h2>
+            <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                <h2>Características y Análisis</h2>
+                <ul>
+                    <li><strong>Fecha de creación:</strong> Avances significativos en la última década.</li>
+                    <li><strong>Ventajas:</strong> Potencial para tratar trastornos neurológicos, interfaces cerebro-máquina.</li>
+                    <li><strong>Desventajas:</strong> Ética y seguridad en el manejo de datos neuronales.</li>
+                </ul>
+                <div class="accordion-body">
+                    Ofrece promesas en medicina, pero la ética y la privacidad son cuestiones que deben ser abordadas cuidadosamente.
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <h2>Especificaciones de Tecnologías Emergentes</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Tecnología</th>
+                    <th>Fecha de Creación</th>
+                    <th>Ventajas</th>
+                    <th>Desventajas</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Inteligencia Artificial Generativa</td>
+                    <td>Desde 2010</td>
+                    <td>Automatiza tareas, fomenta creatividad</td>
+                    <td>Riesgo de desinformación</td>
+                </tr>
+                <tr>
+                    <td>Computación Cuántica</td>
+                    <td>Años 80, desarrollo activo en 2000s</td>
+                    <td>Procesamiento de datos rápido</td>
+                    <td>Costos elevados</td>
+                </tr>
+                <tr>
+                    <td>Biotecnología CRISPR</td>
+                    <td>2012</td>
+                    <td>Precisión en edición genética</td>
+                    <td>Dilemas éticos</td>
+                </tr>
+                <tr>
+                    <td>Redes 5G</td>
+                    <td>2019</td>
+                    <td>Alta velocidad y conectividad</td>
+                    <td>Costos de implementación</td>
+                </tr>
+                <tr>
+                    <td>Realidad Aumentada y Virtual</td>
+                    <td>Desde 1960, popular desde 2010</td>
+                    <td>Mejora de experiencias</td>
+                    <td>Fatiga visual</td>
+                </tr>
+                <tr>
+                    <td>Blockchain</td>
+                    <td>2008</td>
+                    <td>Seguridad en transacciones</td>
+                    <td>Escalabilidad</td>
+                </tr>
+                <tr>
+                    <td>Internet de las Cosas (IoT)</td>
+                    <td>Desde 1999</td>
+                    <td>Automatización</td>
+                    <td>Riesgos de seguridad</td>
+                </tr>
+                <tr>
+                    <td>Drones</td>
+                    <td>Años 2000</td>
+                    <td>Versatilidad en aplicaciones</td>
+                    <td>Regulaciones estrictas</td>
+                </tr>
+                <tr>
+                    <td>Energías Renovables Avanzadas</td>
+                    <td>Desarrollo continuo desde 2000</td>
+                    <td>Sostenibilidad</td>
+                    <td>Costos altos</td>
+                </tr>
+                <tr>
+                    <td>Neurotecnología</td>
+                    <td>Última década</td>
+                    <td>Tratamientos para trastornos neurológicos</td>
+                    <td>Cuestiones éticas</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <footer class="text-center mt-5">
+        <p>&copy; 2024 Tecnologías Emergentes</p>
+    </footer>
+</body>
+</html>

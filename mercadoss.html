@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beneficio de Wells Fargo cae en 3T por reducción del margen de intereses</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #678dc5;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-left: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .main-news {
+            margin: 20px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .news-image {
+            width: 100%;
+            max-width: 500px;
+            border-radius: 8px;
+        }
+        .news-content {
+            margin-top: 20px;
+        }
+        .tradingview-widget-container {
+            width: 100%;
+            max-width: 1000px;
+            height: 500px;
+            margin: 20px auto;
+        }
+        footer {
+            background-color: #2e3b4e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+    <script src="https://s3.tradingview.com/tv.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="logo">Finanzas Hoy</div>
+    <nav>
+        <ul>
+            <li><a href="ECONOMIA.HTML">Economía</a></li>
+            <li><a href="Mercados.html">Mercados</a></li>
+            <li><a href="Bolsa.html">Bolsa</a></li>
+            <li><a href="#">Criptomonedas</a></li>
+            <li><a href="#">Contactos</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <section class="main-news">
+        <div>
+            <h1>Beneficio de Wells Fargo cae en 3T por reducción del margen de intereses</h1>
+           <center> <img src="https://imagenes.eleconomista.com.mx/files/image_756_472/uploads/2018/04/20/66e4981c533f7.jpeg" alt="El banco estadounidense Wells Fargo registró una caída en sus beneficios en el tercer trimestre, aunque fueron superiores a lo esperado." class="news-image"></center>
+            <div class="news-content">
+                <p>El banco estadounidense Wells Fargo registró una caída en sus beneficios en el tercer trimestre, aunque fueron superiores a lo esperado. Las ganancias netas ascendieron a 5,100 millones de dólares, un 11% menos que el año anterior, según un comunicado de prensa publicado el viernes.</p>
+                <p>El beneficio por acción, indicador muy seguido en bolsa, fue de 1.42 dólares, mejor que los 1.28 dólares previstos por los analistas.En los tres meses transcurridos hasta finales de septiembre, las ventas del banco cayeron un 1.6%, hasta 20,360 millones de dólares, por debajo de los 20,410 millones previstos.</p>
+                <p>La principal causa de este descenso fue la reducción del margen de intereses (-11% interanual), que corresponde a lo que el banco gana con sus préstamos e inversiones una vez deducidos los intereses pagados por los depósitos.</p>
+            </div>
+        </div>
+        <div class="tradingview-widget-container">
+            <div id="tradingview_wellsfargo"></div>
+            <script type="text/javascript">
+                new TradingView.widget(
+                {
+                    "width": "100%",
+                    "height": "500",
+                    "symbol": "NYSE:WFC",
+                    "interval": "D",
+                    "timezone": "Etc/UTC",
+                    "theme": "light",
+                    "style": "1",
+                    "locale": "es",
+                    "toolbar_bg": "#f1f3f6",
+                    "enable_publishing": false,
+                    "allow_symbol_change": true,
+                    "container_id": "tradingview_wellsfargo"
+                }
+                );
+            </script>
+        </div>
+    </section>
+</main>
+<footer>
+    <p>&copy; 2024 Finanzas Hoy. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>

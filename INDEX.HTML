@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Noticias Financieras</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #678dc5;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 800px;
+            margin: 20px auto;
+            overflow: hidden;
+            border-radius: 8px;
+        }
+
+        .carousel img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .carousel-content {
+            position: absolute;
+            bottom: 10px;
+            left: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .main-news {
+            margin: 20px;
+        }
+
+        .headline {
+            display: flex;
+            gap: 20px;
+        }
+
+        .headline img {
+            width: 40%; /* Ajustado a 40% del ancho */
+            border-radius: 8px;
+        }
+
+        .headline-text {
+            flex-grow: 1;
+        }
+
+        .headline-text h2 {
+            margin: 0;
+        }
+
+        .news-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin: 20px;
+        }
+
+        .news-item {
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .news-item img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #2e3b4e;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Finanzas Hoy</div>
+    <nav>
+        <ul>
+            <li><a href="economia.html">Economía</a></li>
+            <li><a href="mercados.html">Mercados</a></li>
+            <li><a href="bolsa.html">Bolsa</a></li>
+            <li><a href="cripto.html">Criptomonedas</a></li>
+            <li><a href="contactos.html">Contactos</a></li>
+            <li><a href="tecnologo.html">Tecnologias</a></li>
+            <li><a href="NTF.html">ETF</a></li>
+            <li><a href="IA.HTML">IA✯</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <!-- Carrusel de noticias -->
+    <section class="carousel">
+        <div class="carousel-content">
+            <h3><a href="#" id="news-link" style="color: white; text-decoration: none;"></a></h3>
+        </div>
+        <img src="" alt="Noticia" id="carousel-image">
+        <div class="carousel-controls">
+            <button id="prevBtn" aria-label="Anterior">​​➖​</button>
+            <button id="nextBtn" aria-label="Siguiente">​​➖</button>
+        </div>
+    </section>
+
+    <section class="main-news">
+        <div class="headline">
+            <img src="https://1.bp.blogspot.com/-PE9draMekl8/VuAg18fVjcI/AAAAAAAADho/Pl4hIW0SjRY/s640/bigstock-Stock-Market-Graph-51942028.jpg" alt="noticia principal">
+            <div class="headline-text">
+                <h2><a href="tendencias.html" style="color: black; text-decoration: none;">Tendencias económicas del mes</a></h2>
+                <p>Tendencias Económicas de Octubre de 2024
+                    <br><br>
+                    Crecimiento del PIB: Analiza el crecimiento del Producto Interno Bruto en varias regiones durante octubre. ¿Qué economías están en expansión y cuáles muestran signos de desaceleración?
+                    
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="news-grid">
+        <article class="news-item">
+            <a href="dolar.html">
+                <img src="https://images.milenio.com/jTm2Jo-ahJde187XvrOx2JbT0XE=/942x532/uploads/media/2023/07/11/tipo-de-cambio-peso-dolar.jpg" alt="Noticia 1">
+                <h3>Precio del dólar viernes 11 de octubre de 2024</h3>
+                <p>Peso gana en apertura tras dato de inflación en EU</p>
+            </a>
+        </article>
+        <article class="news-item">
+            <a href="criptomonedas.html">
+                <img src="https://media.ambito.com/p/da36693a53fa6716ae9de9ad975f9769/adjuntos/239/imagenes/041/815/0041815026/bitcoin-criptomonedas.jpg" alt="Noticia 2">
+                <h3>Las criptomonedas moderan bajas, aunque el Bitcoin perfora los u$s60.000</h3>
+                <p>El resto de las criptomonedas operan dispares, con 1,1% encabezadas por Polkadot, Toncoin (0,8%), y Ripple (0,7%). En tanto, caen hasta 2,4% Shiba Inu, Dogecoin (-2,1%) y Binance Coin(-1,7%).</p>
+            </a>
+        </article>
+        <article class="news-item">
+            <a href="mercadoss.html">
+                <img src="https://imagenes.eleconomista.com.mx/files/image_756_472/uploads/2018/04/20/66e4981c533f7.jpeg" alt="Noticia 3">
+                <h3>Beneficio de Wells Fargo cae en 3T por reducción del margen de intereses</h3>
+                <p>El banco estadounidense Wells Fargo registró una caída en sus beneficios en el tercer trimestre, aunque fueron superiores a lo esperado.
+                </p>
+            </a>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Finanzas Hoy. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Noticias simuladas para el carrusel
+        const noticiasSimuladas = [
+            {
+                imagen: "https://elfinanciero.com.mx/resizer/v2/3T46YG7NMZC5LBFRYDTL6OIUUY.jpeg?smart=true&auth=d0ef1ffba3ea9bd86c28147c47ef7078c6b4f17a413a8b36ce65d0f0461a87e5&width=800&height=400",
+                titulo: "Alza de 12% al salario mínimo propuesta por Sheinbaum puede ‘revivir’ la inflación, advierte Heath",
+                link: "noticia1.html"
+            },
+            {
+                imagen: "https://elfinanciero.com.mx/resizer/v2/Y2WJ56M67NB2FFCZEEBAR6LZHI.jpg?smart=true&auth=b640a5f065732c86b59fca1fe2147fd22dca1b63fa7f196954d27f44855257d4&width=800&height=400",
+                titulo: "Ganancias de bancos alcanzan récord hasta agosto con 193 mmdp",
+                link: "noticia2.html"
+            },
+            {
+                imagen: "https://elfinanciero.com.mx/resizer/v2/HRNT536W4VBVBESAYFEKVVEPGU.jpg?auth=be50baa307bb6043da81dbb475a01f01e6e12aaa121de4d0109bc99e768b0810&smart=true&width=800&height=400",
+                titulo: "Sheinbaum va por ‘cortar’ la dependencia de México de importaciones asiáticas, adelanta Ebrard",
+                link: "noticia3.html"
+            },
+
+            {
+                imagen:"https://i.ytimg.com/vi/Jlnmoz1m0rI/maxresdefault.jpg",
+                titulo: "Nvidia quiere expandir su presencia en México y América Latina: Márcio Gomes",
+                link:"noticia4.html"
+            }
+        ];
+
+        let currentSlide = 0;
+
+        const carouselImage = document.getElementById('carousel-image');
+        const newsLink = document.getElementById('news-link');
+
+        // Función para actualizar la imagen del carrusel y el título
+        function updateCarousel() {
+            carouselImage.src = noticiasSimuladas[currentSlide].imagen;
+            newsLink.textContent = noticiasSimuladas[currentSlide].titulo;
+            newsLink.href = noticiasSimuladas[currentSlide].link;
+        }
+
+        // Mostrar la primera noticia
+        updateCarousel();
+
+        // Botones para navegar en el carrusel manualmente
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % noticiasSimuladas.length;
+            updateCarousel();
+        });
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + noticiasSimuladas.length) % noticiasSimuladas.length;
+            updateCarousel();
+        });
+
+        // Cambiar automáticamente cada 5 segundos
+        setInterval(() => {
+            currentSlide = (currentSlide + 1) % noticiasSimuladas.length;
+            updateCarousel();
+        }, 5000); // 5000ms = 5 segundos
+    });
+</script>
+
+</body>
+</html>
